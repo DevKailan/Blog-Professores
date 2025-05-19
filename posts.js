@@ -1,4 +1,3 @@
-
 const jogos = [
   {
     titulo: "Brincando com Ariê 1",
@@ -217,28 +216,28 @@ const jogos = [
     imagem: "https://brincandocomarie.com.br/images/desafio-j-g.jpg",
     link: "https://brincandocomarie.com.br/desafio-j-g"
   },
-   {
+  {
     titulo: "Yuki e os Vilões",
     ano: "2º Ano EF",
     descricao: "Jogo de aventura com o gato Yuki enfrentando vilões em mini-jogos que envolvem lógica, leitura e matemática. Ideal para revisar conteúdos de forma divertida.",
     imagem: "https://brincandocomarie.com.br/images/yuki-e-os-viloes-3.jpg",
     link: "https://brincandocomarie.com.br/desafio-j-g"
   },
-   {
+  {
     titulo: "Ariê Somando",
     ano: "2º Ano EF",
     descricao: "Ajude Ariê a resolver contas de adição para vencer desafios e encontrar tesouros escondidos. Ótimo para fixar noções básicas de soma.",
     imagem: "https://brincandocomarie.com.br/images/arie-subtrair.jpg",
     link: "https://brincandocomarie.com.br/arie-somando"
   },
-   {
+  {
     titulo: "Chapeuzinho e o Enigma da Floresta",
     ano: "2º Ano EF",
     descricao: "Ajude a Chapeuzinho a resolver enigmas de leitura e lógica para atravessar a floresta com segurança. Estimula raciocínio e interpretação.",
     imagem: "https://brincandocomarie.com.br/images/chapeuzinho-enigma.jpg",
     link: "https://brincandocomarie.com.br/chapeuzinho-enigma"
   },
-   {
+  {
     titulo: "Ariê Subtrair",
     ano: "2º Ano EF",
     descricao: "Resolva operações de subtração junto com Ariê em fases lúdicas com obstáculos e inimigos. Excelente para introduzir a subtração de forma leve.",
@@ -287,7 +286,7 @@ const jogos = [
     imagem: "https://brincandocomarie.com.br/images/arie-tabuada.jpg",
     link: "https://brincandocomarie.com.br/arie-tabuada"
   },
-   {
+  {
     titulo: "Kids vs Covid",
     ano: "4º Ano EF",
     descricao: "Ajude um pequeno herói a enfrentar o coronavírus respondendo corretamente perguntas sobre prevenção e higiene. Mistura conscientização e educação com jogabilidade leve",
@@ -311,7 +310,13 @@ function gerarCards() {
     if (!container) return;
 
     const col = document.createElement("div");
-    col.className = "col-md-4";
+
+    if (window.innerWidth <= 768) {
+      col.className = "col-12 mb-3";
+    } else {
+      col.className = "col-md-4 mb-3";
+    }
+
     col.innerHTML = `
       <div class="card">
         <a href="${jogo.link}" target="_blank">
@@ -328,5 +333,4 @@ function gerarCards() {
   });
 }
 
-// Ao carregar a página, gera os cards
 window.onload = gerarCards;
