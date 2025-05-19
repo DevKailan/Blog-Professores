@@ -38,9 +38,13 @@ meu-blog/
 
 │
 ├── index.html # Página principal
+
 ├── style.css # Estilos customizados (modo escuro, cards, navbar, footer)
+
 ├── posts.js # Array de objetos “jogos” + lógica de geração de cards
+
 ├── favicon.png # Ícone do site
+
 └── assets/ # (opcional) imagens locais, se desejar hospedar aqui
 
 
