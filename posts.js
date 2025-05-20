@@ -67,35 +67,35 @@ const jogos = [
     ano: "1º Ano EF",
     descricao: "Ajude o robô Matbot a completar circuitos eletrônicos resolvendo operações de soma. Cada resultado correto faz o Matbot avançar por um cenário cheio de engrenagens e luzes, reforçando o conceito de adição.",
     imagem: "https://brincandocomarie.com.br/images/matbot.jpg",
-    link: ""
+    link: "https://brincandocomarie.com.br/matbot/"
   },
   {
     titulo: "Matbot- Subtração",
     ano: "1º Ano EF",
     descricao: "Desafie-se guiando o Matbot através de labirintos numéricos, resolvendo subtrações para destravar portas e chegar ao final de cada fase, exercitando o raciocínio aritmético de forma divertida.",
     imagem: "https://brincandocomarie.com.br/images/matbot_subtracao.jpg",
-    link: ""
+    link: "https://brincandocomarie.com.br/matbot-sub/"
   },
   {
     titulo: "Cruzabot",
     ano: "1º Ano EF",
     descricao: "Jogo de cruzadinhas interativas: preencha os espaços em branco com as letras corretas para formar palavras, descobrindo dicas e expandindo o vocabulário de maneira lúdica.",
     imagem: "https://brincandocomarie.com.br/images/cruzabot.jpg",
-    link: ""
+    link: "https://brincandocomarie.com.br/cruzabot/"
   },
   {
     titulo: "Sereia Maria e as Formas",
     ano: "1º Ano EF",
     descricao: "Participe de uma aventura submarina com a Sereia Maria, associando peixinhos a formas geométricas (círculo, quadrado, triângulo, retângulo) para aprender conceitos básicos de geometria.",
     imagem: "https://brincandocomarie.com.br/images/sereia-maria-formas.jpg",
-    link: ""
+    link: "https://brincandocomarie.com.br/sereia-maria-formas/"
   },
   {
     titulo: "Heróis contra a Poluição",
     ano: "1º Ano EF",
     descricao: "Vista a capa de super-herói e escreva números de 1 a 10 por extenso para combater monstros de poluição. Uma forma criativa de reforçar escrita numérica e conscientização ambiental.",
     imagem: "https://brincandocomarie.com.br/images/herois-poluicao-numeros.jpg",
-    link: ""
+    link: "https://brincandocomarie.com.br/herois-poluicao/"
   },
   {
     titulo: "Capitão Alberto e o Tesouro do Faraó",
@@ -186,7 +186,49 @@ const jogos = [
     ano: "1º Ano EF",
     descricao: "Corrida em kart para aprender o alfabeto: passe sobre as letras e desvie de obstáculos nas pistas.",
     imagem: "https://brincandocomarie.com.br/images/abckart.jpg",
-    link: "https://brincandocomarie.com.br/abckart"
+    link: "://brincandocomarie.com.br/abckart"
+  },
+  {
+    titulo: "Sílabas e Figuras",
+    ano: "1º Ano EF",
+    descricao: "Associe sílabas a figuras, fortalecendo consciência fonológica e reconhecimento de sons de forma interativa e divertida. ",
+    imagem: "https://jogoseducativos.hvirtua.com/wp-content/uploads/2024/02/silabas-e-figuras.jpg",
+    link: "https://jogoseducativos.hvirtua.com/silabas-e-figuras/"
+  },
+  {
+    titulo: "Desafio das Letras",
+    ano: "1º Ano EF",
+    descricao: "Resolva desafios guiados pelo Nunu, encontrando letras em aventura lúdica que estimula escrita e leitura",
+    imagem: "https://jogoseducativos.hvirtua.com/wp-content/uploads/2024/02/desafio-das-letras.jpg",
+    link: "https://jogoseducativos.hvirtua.com/desafio-das-letras/"
+  },
+  {
+    titulo: "Complete as Figuras 2",
+    ano: "1º Ano EF",
+    descricao: "Preencha partes faltantes em figuras de animais, desenvolvendo atenção, observação detalhada e memória visual divertida.",
+    imagem: "https://jogoseducativos.hvirtua.com/wp-content/uploads/2024/07/complete-as-figuras2.png",
+    link: "https://jogoseducativos.hvirtua.com/complete-as-figuras2/"
+  },
+  {
+    titulo: "Quebra-Cabeça 2",
+    ano: "1º Ano EF",
+    descricao: "Monte imagens em peças soltas, exercitando raciocínio espacial, paciência e coordenação motora em desafios coloridos.",
+    imagem: "https://jogoseducativos.hvirtua.com/wp-content/uploads/2024/02/quebra-cabeca-animais-marinhos.jpg",
+    link: "https://jogoseducativos.hvirtua.com/quebra-cabeca-2/"
+  },
+  {
+    titulo: "Ligue as Cores",
+    ano: "1º Ano EF",
+    descricao: "Conecte pares de pontos coloridos evitando cruzar caminhos, estimulando lógica, coordenação motora, criatividade e paciência.",
+    imagem: "https://jogoseducativos.hvirtua.com/wp-content/uploads/2025/03/ligue_as_cores.png",
+    link: "https://jogoseducativos.hvirtua.com/ligue-as-cores/"
+  },
+  {
+    titulo: "Jogo da Velha: A Batalha Épica",
+    ano: "1º Ano EF",
+    descricao: "Jogue velha contra computador, praticando estratégia, tomada de decisão e raciocínio lógico em tabuleiro digital.",
+    imagem: "https://jogoseducativos.hvirtua.com/wp-content/uploads/2024/11/jogo_da_velha_hvirtua.png",
+    link: "https://jogoseducativos.hvirtua.com/jogo-da-velha-a-batalha-epica/"
   },
   {
     titulo: "Desafio U vs L",
@@ -245,12 +287,36 @@ const jogos = [
     link: "https://brincandocomarie.com.br/arie-subtrair"
   },
   {
-    titulo: "Ariê Somando",
+    titulo: "Complete a Sequência",
     ano: "2º Ano EF",
-    descricao: "Ajude Yuki a achar tesouros na caverna somando números. Aventura assustadora com esqueletos piratas.",
-    imagem: "https://brincandocomarie.com.br/images/arie-somando.jpg",
+    descricao: "Clique nos números que faltam para concluir sequência numérica, reforçando contagem e lógica de forma progressiva. ",
+    imagem: "https://jogoseducativos.hvirtua.com/wp-content/uploads/2024/02/complete-a-sequencia-logica.jpg",
+    link: "https://jogoseducativos.hvirtua.com/complete-a-sequencia/"
+  },
+  {
+    titulo: "Jogo dos Sinais",
+    ano: "2º Ano EF",
+    descricao: "Arraste sinais entre números para praticar comparação de valores, reconhecendo maior, menor e igual corretamente.",
+    imagem: "https://jogoseducativos.hvirtua.com/wp-content/uploads/2024/02/jogo-dos-sinais.jpg",
+    link: "https://jogoseducativos.hvirtua.com/jogo-dos-sinais/"
+  },
+  {
+    titulo: "Ordene as Letras",
+    ano: "2º Ano EF",
+    descricao: "Arraste letras para formação de palavras, trabalhando alfabetização, coordenação motora e reconhecimento de ortografia correta.",
+    imagem: "https://jogoseducativos.hvirtua.com/wp-content/uploads/2024/02/ordene-as-letras-calendario.jpg",
     link: "https://brincandocomarie.com.br/arie-somando"
   },
+  {
+    titulo: "Encaixa Formas",
+    ano: "2º Ano EF",
+    descricao: "Encaixe objetos em silhuetas correspondentes, reforçando classificação, formas geométricas e coordenação motora em atividade lúdica.",
+    imagem: "https://jogoseducativos.hvirtua.com/wp-content/uploads/2024/02/encaixa-formas.jpg",
+    link: "https://jogoseducativos.hvirtua.com/encaixa-formas/"
+  },
+
+  //JOGOS 3º
+
   {
     titulo: "Desafio M vs N",
     ano: "3º Ano EF",
@@ -262,8 +328,50 @@ const jogos = [
     titulo: "Zumzumbi",
     ano: "3º Ano EF",
     descricao: "Atire sílabas corretas para afastar zumbis e abelhas ameaçadoras. Mistura ação com alfabetização, incentivando leitura e raciocínio rápido.",
+    imagem: "https://jogoseducativos.hvirtua.com/wp-content/uploads/2024/02/jogo-dos-sinais.jpg",
+    link: "https://jogoseducativos.hvirtua.com/category/fundamental/"
+  },
+  {
+    titulo: "Jogo dos Sinais",
+    ano: "3º Ano EF",
+    descricao: "Maior, Menor e Igual – Indique se o número é maior, menor ou igual, arraste a figura correspondente até a área indicada, informe para a criança que a boca do jacaré tem o desenho do sinal matemático. Com a pronúncia dos números e sinais.",
     imagem: "https://brincandocomarie.com.br/images/zumzumbi.jpg",
     link: "https://brincandocomarie.com.br/zumzumbi"
+  },
+  {
+    titulo: "Pac-Mática",
+    ano: "3º Ano EF",
+    descricao: "Controle personagem colecionando números, praticando operações básicas e raciocínio em labirintos eletrônicos interativos e desafiantes.",
+    imagem: "https://jogoseducativos.hvirtua.com/wp-content/uploads/2024/07/pacmatica.png",
+    link: "https://jogoseducativos.hvirtua.com/pac-matica/"
+  },
+  {
+    titulo: "Dengue Combate",
+    ano: "3º Ano EF",
+    descricao: "Ajude eliminar criadouros de dengue, desenvolvendo responsabilidade, prevenção de doenças e consciência ambiental lúdica ativa.",
+    imagem: "https://jogoseducativos.hvirtua.com/wp-content/uploads/2024/06/dengue_combate.jpg",
+    link: "https://jogoseducativos.hvirtua.com/dengue-combate/"
+  },
+  {
+    titulo: "Quiz Dengue",
+    ano: "3º Ano EF",
+    descricao: "Responda perguntas sobre dengue, reforçando conhecimentos de saúde, prevenção e comportamento cidadão de forma interativa.",
+    imagem: "https://jogoseducativos.hvirtua.com/wp-content/uploads/2024/03/quiz-dengue.png",
+    link: "https://jogoseducativos.hvirtua.com/quiz-dengue/"
+  },
+  {
+    titulo: "Invasão Alien – Tabuada",
+    ano: "3º Ano EF",
+    descricao: "Atire em números que completam tabuadas selecionadas, fortalecendo multiplicação e fluência matemática em ação divertida.",
+    imagem: "https://jogoseducativos.hvirtua.com/wp-content/uploads/2024/03/invasao-alien-tabuada.jpg",
+    link: "https://jogoseducativos.hvirtua.com/invasao-alien-tabuada/"
+  },
+  {
+    titulo: "Feche a Caixa",
+    ano: "3º Ano EF",
+    descricao: "Use soma de dados para fechar peças numeradas, desenvolvendo adição, estratégia e lógica em dinâmica clássica.",
+    imagem: "https://jogoseducativos.hvirtua.com/wp-content/uploads/2024/02/feche-a-caixa.jpg",
+    link: "https://jogoseducativos.hvirtua.com/feche-a-caixa/"
   },
   {
     titulo: "Desafio S vs Z",
@@ -295,9 +403,12 @@ const jogos = [
   }
 ];
 
-// Função que cria os cards a partir do array de objetos
-function gerarCards() {
-  jogos.forEach(jogo => {
+const jogosUnicos = jogos.filter((jogo, idx, arr) =>
+  arr.findIndex(j => j.titulo === jogo.titulo) === idx
+);
+
+
+  jogosUnicos.forEach(jogo => {
     let containerId = "";
     if (jogo.ano.includes("Infantil")) containerId = "cards-inf";
     else if (jogo.ano.startsWith("1")) containerId = "cards-1";
@@ -310,27 +421,40 @@ function gerarCards() {
     if (!container) return;
 
     const col = document.createElement("div");
+    col.className = "card-col";
 
-    if (window.innerWidth <= 768) {
-      col.className = "col-12 mb-3";
-    } else {
-      col.className = "col-md-4 mb-3";
-    }
+    const imagemTag = `
+      <img src="${jogo.imagem}" class="card-img-top" alt="Imagem do jogo ${jogo.titulo}">
+    `;
+    const cardLinkStart = jogo.link
+      ? `<a href="${jogo.link}" target="_blank" rel="noopener noreferrer" aria-label="Abrir ${jogo.titulo} em nova aba">`
+      : "";
+    const cardLinkEnd = jogo.link ? `</a>` : "";
 
     col.innerHTML = `
-      <div class="card">
-        <a href="${jogo.link}" target="_blank">
-          <img src="${jogo.imagem}" class="card-img-top" alt="${jogo.titulo}">
-        </a>
+      <article class="card h-100" tabindex="0" aria-labelledby="titulo-${slugify(jogo.titulo)}">
+        ${cardLinkStart}
+          ${imagemTag}
+        ${cardLinkEnd}
         <div class="card-body">
-          <h5 class="card-title">${jogo.titulo}</h5>
+          <h3 class="card-title h5" id="titulo-${slugify(jogo.titulo)}">${jogo.titulo}</h3>
           <p class="card-text"><strong>Ano:</strong> ${jogo.ano}</p>
           <p class="card-text">${jogo.descricao}</p>
         </div>
-      </div>
+      </article>
     `;
     container.appendChild(col);
   });
+
+
+function slugify(text) {
+  return text.toString().toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w\-]+/g, '')
+    .replace(/\-\-+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '');
 }
 
-window.onload = gerarCards;
+// 5) Inicia
+window.addEventListener('DOMContentLoaded', gerarCards);
