@@ -1,44 +1,60 @@
 body {
-  background-color: #88a3ee;
-  color: #333;
+  background: #E3F2FD;
+  color: #1565C0;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.menu-links li a,
+.logo,
+.btn-agendar {
+  font-family: 'Fredoka', 'Nunito', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.5px;
 }
 
 h2 {
   margin-top: 2rem;
   margin-bottom: 1rem;
-  color: #FFA500;
-  border-left: 5px solid #FFA500;
-  padding-left: 10px;
-  font-weight: 600;
+  color: #0D47A1;
+  border-left: 5px solid #1976D2;
+  background: #E3F2FD;
+  padding-left: 12px;
+  font-weight: 700;
+  border-radius: 0 8px 8px 0;
 }
 
 .card {
-  background-color: #ffffff;
-  border: 1.5px solid #333;
-  /* Borda escura fina */
+  background-color: #90CAF9;
+  border: 1.5px solid #1976D2;
   margin-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
   height: 100%;
   margin-top: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 16px #1565c022;
+  border-radius: 12px;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  color: #1565C0;
 }
 
 .card:hover,
 .card:focus-within {
   transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
-  border-color: #FFA500;
+  box-shadow: 0 8px 32px #1565c044;
+  border-color: #0D47A1;
 }
 
 .card-img-top {
   width: 100%;
   height: auto;
   display: block;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 a.card-img-top:hover {
@@ -54,8 +70,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
-  background-color: #fff;
-  color: #2196f3;
+  background-color: #1976D2;
+  color: #fff;
   min-height: 60px;
   border-radius: 5px;
 }
@@ -68,20 +84,23 @@ nav img {
   border-radius: 40%;
   display: block;
   margin: 0 auto;
+  background: #fff;
+  padding: 3px;
 }
 
 nav a {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Fredoka', 'Nunito', Arial, Helvetica, sans-serif;
   margin: 0 1rem;
   align-items: center;
-  color: #2196f3;
+  color: #fff;
   text-decoration: none;
   font-size: 1.3rem;
   transition: color 0.2s;
+  text-shadow: 1px 1px 2px #0D47A1, -1px -1px 2px #0D47A1;
 }
 
 nav a:hover {
-  color: #0800ff;
+  color: #90CAF9;
 }
 
 nav ul {
@@ -102,6 +121,11 @@ nav ul {
 
 .container {
   padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #1565c022;
 }
 
 /* NAVBAR */
@@ -109,10 +133,11 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #0800ff;
+  background: #1565C0;
   padding: 0.5rem 2rem;
   border-radius: 5px;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .logo {
@@ -128,58 +153,112 @@ nav ul {
   height: 40px;
   border-radius: 40%;
   margin-right: 8px;
+  background: #fff;
+  padding: 2px;
 }
 
 .menu-links {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   list-style: none;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
 .menu-links li a {
   color: #fff;
   text-decoration: none;
   font-size: 1.1rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Fredoka', 'Nunito', Arial, Helvetica, sans-serif;
   transition: color 0.2s;
+  text-shadow: 1px 1px 2px #0D47A1, -1px -1px 2px #0D47A1;
 }
 
 .menu-links li a:hover,
 .menu-links li a[aria-current="page"] {
-  color: #FFA500;
+  color: #1976D2;
 }
 
 .menu-toggle {
   display: none;
   background: none;
   border: none;
-  color: #fff;
-  font-size: 2rem;
   cursor: pointer;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 30;
+  border-radius: 8px;
+  transition: background 0.2s;
+  outline: none;
+}
+
+.menu-toggle:focus,
+.menu-toggle:hover {
+  background: #1976D2;
+}
+
+.menu-toggle .bar {
+  display: block;
+  width: 28px;
+  height: 4px;
+  margin: 5px auto;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.menu-toggle.open .bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+.menu-toggle.open~.menu-links {
+  display: flex;
 }
 
 /* Responsivo para menu mobile */
 @media (max-width: 768px) {
-  .menu-links {
+  .nav-principal {
     flex-direction: column;
-    width: 100%;
-    display: none;
-    background: #0800ff;
-    position: absolute;
-    left: 0;
-    top: 60px;
-    z-index: 10;
-    border-radius: 0 0 5px 5px;
-  }
-
-  .menu-links.open {
-    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
   }
 
   .menu-toggle {
     display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 20;
+    /* Garante que fica acima do menu */
+  }
+
+  .menu-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    background: #1565C0;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    z-index: 10;
+    border-radius: 0 0 8px 8px;
+    gap: 0;
+  }
+
+  .menu-links.open {
+    display: flex;
   }
 
   .cards-container {
@@ -201,6 +280,19 @@ nav ul {
     font-size: 1.2rem;
     padding-left: 6px;
   }
+
+  .btn-agendar {
+    width: 90%;
+    margin: 1rem auto;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .menu-links li {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .card-col {
@@ -212,4 +304,37 @@ nav ul {
   .card-col {
     width: 100%;
   }
+}
+
+.btn-agendar {
+  background: #1976D2;
+  color: #fff;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 1px 1px 4px #0003;
+  font-family: 'Fredoka', 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+.btn-agendar:hover,
+.btn-agendar:focus {
+  background: #0D47A1;
+  color: #fff;
+}
+
+footer {
+  background: #1565C0;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 2rem;
+  box-shadow: 0 -2px 8px #0001;
+  text-align: center;
+  padding: 1rem 0;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
 }

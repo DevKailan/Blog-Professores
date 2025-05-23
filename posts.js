@@ -408,30 +408,30 @@ const jogosUnicos = jogos.filter((jogo, idx, arr) =>
 );
 
 
-  jogosUnicos.forEach(jogo => {
-    let containerId = "";
-    if (jogo.ano.includes("Infantil")) containerId = "cards-inf";
-    else if (jogo.ano.startsWith("1")) containerId = "cards-1";
-    else if (jogo.ano.startsWith("2")) containerId = "cards-2";
-    else if (jogo.ano.startsWith("3")) containerId = "cards-3";
-    else if (jogo.ano.startsWith("4")) containerId = "cards-4";
-    else if (jogo.ano.startsWith("5")) containerId = "cards-5";
+jogosUnicos.forEach(jogo => {
+  let containerId = "";
+  if (jogo.ano.includes("Infantil")) containerId = "cards-inf";
+  else if (jogo.ano.startsWith("1")) containerId = "cards-1";
+  else if (jogo.ano.startsWith("2")) containerId = "cards-2";
+  else if (jogo.ano.startsWith("3")) containerId = "cards-3";
+  else if (jogo.ano.startsWith("4")) containerId = "cards-4";
+  else if (jogo.ano.startsWith("5")) containerId = "cards-5";
 
-    const container = document.getElementById(containerId);
-    if (!container) return;
+  const container = document.getElementById(containerId);
+  if (!container) return;
 
-    const col = document.createElement("div");
-    col.className = "card-col";
+  const col = document.createElement("div");
+  col.className = "card-col";
 
-    const imagemTag = `
+  const imagemTag = `
       <img src="${jogo.imagem}" class="card-img-top" alt="Imagem do jogo ${jogo.titulo}">
     `;
-    const cardLinkStart = jogo.link
-      ? `<a href="${jogo.link}" target="_blank" rel="noopener noreferrer" aria-label="Abrir ${jogo.titulo} em nova aba">`
-      : "";
-    const cardLinkEnd = jogo.link ? `</a>` : "";
+  const cardLinkStart = jogo.link
+    ? `<a href="${jogo.link}" target="_blank" rel="noopener noreferrer" aria-label="Abrir ${jogo.titulo} em nova aba">`
+    : "";
+  const cardLinkEnd = jogo.link ? `</a>` : "";
 
-    col.innerHTML = `
+  col.innerHTML = `
       <article class="card h-100" tabindex="0" aria-labelledby="titulo-${slugify(jogo.titulo)}">
         ${cardLinkStart}
           ${imagemTag}
@@ -443,8 +443,8 @@ const jogosUnicos = jogos.filter((jogo, idx, arr) =>
         </div>
       </article>
     `;
-    container.appendChild(col);
-  });
+  container.appendChild(col);
+});
 
 
 function slugify(text) {
