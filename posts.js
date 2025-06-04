@@ -186,7 +186,7 @@ const jogos = [
     ano: "1º Ano EF",
     descricao: "Corrida em kart para aprender o alfabeto: passe sobre as letras e desvie de obstáculos nas pistas.",
     imagem: "https://brincandocomarie.com.br/images/abckart.jpg",
-    link: "://brincandocomarie.com.br/abckart"
+    link: "https://brincandocomarie.com.br/abckart"
   },
   {
     titulo: "Sílabas e Figuras",
@@ -403,17 +403,18 @@ const jogos = [
   }
 ];
 
-const jogosUnicos = jogos.filter((jogo, idx, arr) =>
-  arr.findIndex(j => j.titulo === jogo.titulo) === idx
-);
+function gerarCards() {
+  const jogosUnicos = jogos.filter((jogo, idx, arr) =>
+    arr.findIndex(j => j.titulo === jogo.titulo) === idx
+  );
 
 
-jogosUnicos.forEach(jogo => {
-  let containerId = "";
-  if (jogo.ano.includes("Infantil")) containerId = "cards-inf";
-  else if (jogo.ano.startsWith("1")) containerId = "cards-1";
-  else if (jogo.ano.startsWith("2")) containerId = "cards-2";
-  else if (jogo.ano.startsWith("3")) containerId = "cards-3";
+  jogosUnicos.forEach(jogo => {
+    let containerId = "";
+    if (jogo.ano.includes("Infantil")) containerId = "cards-inf";
+    else if (jogo.ano.startsWith("1")) containerId = "cards-1";
+    else if (jogo.ano.startsWith("2")) containerId = "cards-2";
+    else if (jogo.ano.startsWith("3")) containerId = "cards-3";
   else if (jogo.ano.startsWith("4")) containerId = "cards-4";
   else if (jogo.ano.startsWith("5")) containerId = "cards-5";
 
@@ -443,8 +444,9 @@ jogosUnicos.forEach(jogo => {
         </div>
       </article>
     `;
-  container.appendChild(col);
-});
+    container.appendChild(col);
+  });
+}
 
 
 function slugify(text) {
